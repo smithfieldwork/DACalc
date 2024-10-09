@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disability Allowance Calculator</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="banner">
+      <h1>Disability Allowance Calculator</h1>
+    </div>
+
+    <div id="main">
+      <!-- Language toggle, radio buttons side by side -->
+      <input
+        type="radio"
+        name="language"
+        value="English"
+        id="English"
+        checked
+      />
+      <label for="English">English</label>
+
+      <input type="radio" name="language" value="Gaeilge" id="Gaeilge" />
+      <label for="Gaeilge">Gaeilge</label>
+    </div>
+
+    <div id="table">
+      <table>
+        <tr>
+          <td>
+            <label for="weekly-income">Weekly Income:</label>
+          </td>
+          <td>
+            <input type="number" id="weekly-income" name="Weekly Income" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="savings-investments">Savings and Investments:</label>
+          </td>
+          <td>
+            <input
+              type="number"
+              id="savings-investments"
+              name="Savings and Investments"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <button id="calculate-btn">Calculate</button>
+
+    <div id="output"></div>
+
+    <script src="DAInput.js"></script>
+  </body>
+</html>
